@@ -16,17 +16,6 @@ docker run -d --name kuritka/docker-wkhtmltopdf-aas -p 127.0.0.1:8080:80 kuritka
 
 The container now runs as a daemon.
 
-Find the port that the container is bound to:
-
-```sh
-docker port 071599a1373e 80
-```
-
-where 071599a1373e is the container SHA that docker assigned when
-`docker run` was executed in the previous command.
-
-Take a note of the public port number where docker binds to.
-
 ## Using the webservice
 
 There are multiple ways to generate a PDF of HTML using the
